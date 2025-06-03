@@ -247,7 +247,7 @@ const Komentar = () => {
             </div>
             <div className="p-6 space-y-6">
                 {error && (
-                    <div className="flex items-center gap-2 p-4 text-red-400 bg-red-500/10 border border-red-500/20 rounded-xl" data-aos="fade-in">
+                    <div className="flex items-center gap-2 p-4 text-red-400 bg-red-500/10 border border-red-500/20 rounded-xl\" data-aos="fade-in">
                         <AlertCircle className="w-5 h-5 flex-shrink-0" />
                         <p className="text-sm">{error}</p>
                     </div>
@@ -259,7 +259,7 @@ const Komentar = () => {
 
                 <div className="space-y-4 h-[300px] overflow-y-auto custom-scrollbar" data-aos="fade-up" data-aos-delay="200">
                     {comments.length === 0 ? (
-                        <div className="text-center py-8" data-aos="fade-in">
+                        <div className="text-center py-8\" data-aos="fade-in">
                             <UserCircle2 className="w-12 h-12 text-indigo-400 mx-auto mb-3 opacity-50" />
                             <p className="text-gray-400">No comments yet. Start the conversation!</p>
                         </div>
