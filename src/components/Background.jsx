@@ -18,10 +18,8 @@ const AnimatedBackground = () => {
 			const scrollDelta = newScroll - currentScroll
 			currentScroll = newScroll
 
-			blobRefs.current.forEach((blob, index) => {
-				// Skip if blob reference is null
-				if (!blob) return
-
+			// Filter out null references before applying transformations
+			blobRefs.current.filter(Boolean).forEach((blob, index) => {
 				const initialPos = initialPositions[index]
 
 				// Calculating movement in both X and Y direction
@@ -42,7 +40,9 @@ const AnimatedBackground = () => {
 		window.addEventListener("scroll", handleScroll)
 		return () => {
 			window.removeEventListener("scroll", handleScroll)
-			cancelAnimationFrame(requestId)
+			if (requestId) {
+				cancelAnimationFrame(requestId)
+			}
 		}
 	}, [])
 
