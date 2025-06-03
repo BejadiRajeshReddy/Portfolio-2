@@ -205,7 +205,7 @@ const AboutPage = () => {
 
   return (
     <div
-      className="h-auto pb-[10%] text-white overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm-mt-0"
+      className=" transform scale-90 h-auto pb-[10%] text-white overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10 sm-mt-0"
       id="About"
     >
       <Header />
@@ -235,14 +235,15 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga sunt consectetur rem obcaecati est. Corrupti, aut mollitia. Maxime vitae consectetur voluptatem voluptatibus in. Saepe sequi earum quis temporibus modi blanditiis illo delectus iusto doloremque unde.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+              sunt consectetur rem obcaecati est. Corrupti, aut mollitia. Maxime
+              vitae consectetur voluptatem voluptatibus in. Saepe sequi earum
+              quis temporibus modi blanditiis illo delectus iusto doloremque
+              unde.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a
-                href=""
-                className="w-full lg:w-auto"
-              >
+              <a href="" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
