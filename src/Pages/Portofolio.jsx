@@ -17,3 +17,5 @@ import { projects, certificates } from "../data/projects";
 
 // Rest of the file remains the same, just remove Firebase imports and fetchData function
 // Replace any Firebase related code with the imported data
+
+export default Certificate
